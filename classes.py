@@ -77,7 +77,7 @@ class Car(Vehicle):
 # in the function calculate trips we take only one argument "load" is a weight that needs to be carried
 
 
-class Truck(Vehicle, Driver):
+class Truck(Vehicle):
     def __init__(self, odometer, transported_weight, trailer_carry, vehicle_number, gas_type, costs,
                  drivers_license, l_km, tech_insp, insurance_date, gas_price, licence_category):
         super().__init__(odometer, transported_weight, vehicle_number, gas_type, costs, drivers_license, l_km,
