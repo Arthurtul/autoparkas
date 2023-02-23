@@ -15,7 +15,8 @@ class MyTestCase(unittest.TestCase):
             l_km=100,
             tech_insp="2022-01-01",
             insurance_date="2023-03-03",
-            gas_price=1.5
+            gas_price=1.5,
+            licence_category="D"
         )
 
     def test_calculate_trips(self):

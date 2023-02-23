@@ -1,5 +1,6 @@
 import unittest
 from classes import Vehicle
+from datetime import datetime
 
 
 class TestVehicle(unittest.TestCase):
@@ -15,7 +16,11 @@ class TestVehicle(unittest.TestCase):
             l_km=10,
             tech_insp="2023-02-20",
             insurance_date="2023-01-01",
-            gas_price=2.0
+            gas_price=2.0,
+            licence_category="D",
+            salary="1200",
+            scheduled_leave_start=datetime(2024, 7, 6),
+            scheduled_leave_end=datetime(2024, 7, 26)
         )
 
     def test_is_insurance_required_next_month(self):
